@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="banditmanchot.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <StackLayout Padding="30" Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <Label x:Name="Roll1" FontSize="Large" Text="?" BackgroundColor="Silver" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                <Label x:Name="Roll2" FontSize="Large" Text="?" BackgroundColor="Silver" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                <Label x:Name="Roll3" FontSize="Large" Text="?" BackgroundColor="Silver" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+            </StackLayout>
+            <Button Text="Tirer la manivelle" Clicked="OnPlayClicked" />
+            <Label x:Name="ResultLabel" FontSize="Medium" Text="Résultat du jeu ici" />
+            <Label x:Name="PlayerName" FontSize="Large" Text="Nom du joueur" />
+            <Label x:Name="PlayerBalance" FontSize="Medium" Text="Solde: 100" />
+            <Button Text="Nouveau Joueur" Clicked="OnNewPlayerClicked" />
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
